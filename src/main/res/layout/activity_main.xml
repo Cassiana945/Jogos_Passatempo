@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#ECFFE3">
+
+    <ImageView
+        android:id="@+id/pucgo"
+        android:layout_width="171dp"
+        android:layout_height="216dp"
+        android:src="@drawable/pucgoias"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noticia_text_regular"
+        android:textSize="25sp"
+        android:textColor="#2C2C2C"
+        android:layout_below="@id/pucgo"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cassiana Cruz Marciano" />
+
+    <TextView
+        android:id="@+id/matricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noticia_text_regular"
+        android:textSize="23sp"
+        android:textColor="#2C2C2C"
+        android:layout_below="@id/nome"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="20232012000469" />
+
+    <TextView
+        android:id="@+id/curso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noticia_text_regular"
+        android:textSize="21sp"
+        android:textColor="#2C2C2C"
+        android:layout_below="@id/matricula"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Análise e Desenvolvimento" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noticia_text_regular"
+        android:textSize="21sp"
+        android:textColor="#2C2C2C"
+        android:layout_below="@id/curso1"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="de Sistemas" />
+
+    <ImageView
+        android:id="@+id/proximo"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/proximo" />
+
+</RelativeLayout>

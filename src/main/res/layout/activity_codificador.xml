@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="#ECFFE3"
+    tools:context=".CodificadorActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monofett_regular"
+        android:text="Codificador"
+        android:textColor="#4D8034"
+        android:textSize="47sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/textMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="71dp"
+        android:hint="digite uma mensagem"
+        android:textColorHint="#606060"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/textChave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMensagem"
+        android:layout_marginTop="30dp"
+        android:hint="digite a chave"
+        android:textColorHint="#606060"
+        android:textColor="#000000"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/moul_regular"
+        android:text="palavra aqui"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:textColor="#4D8034"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textChave"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="227dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/resultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ok_retangulo" />
+
+    <ImageView
+        android:id="@+id/decodificar"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/voltar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/decodificar" />
+
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-18dp"
+        android:src="@drawable/voltar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
